@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/buscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/search_24"
+        android:title="Buscador"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="com.google.android.material.search.SearchView"
+        />
+    <item
+        android:id="@+id/filtro"
+        android:title="Filtro"
+        android:icon="@drawable/filter_list_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/perfil"
+        android:title="Incidencias"
+        android:icon="@drawable/baseline_person_pin_24"
+        app:showAsAction="always"
+        />
+
+</menu>

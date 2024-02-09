@@ -22,20 +22,20 @@ class InicioActivity : AppCompatActivity() {
         const val CHANNEL_ID : String = "your_channel_id"
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel() {
-        val CHANNEL_NAME = "Your Channel Name"
-        val CHANNEL_DESCRIPTION = "Channel Description"
+        val channelName = "Your Channel Name"
+        val channelDescription = "Channel Description"
 
 
             val importance = NotificationManager.IMPORTANCE_HIGH
-            val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, importance).apply {
-                description = CHANNEL_DESCRIPTION
+            val channel = NotificationChannel(CHANNEL_ID, channelName, importance).apply {
+                description = channelDescription
             }
         val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun sendNotification(context: Context, title: String, description: String) {
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_foreground) // Replace with your notification icon
@@ -53,12 +53,15 @@ class InicioActivity : AppCompatActivity() {
         }
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
         // Call this method to create the notification channel
         createNotificationChannel()
-        sendNotification(this, "Prueba", "Esto es una prueba")
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            sendNotification(this, "Prueba", "Esto es una prueba")
+        }
     }
 }

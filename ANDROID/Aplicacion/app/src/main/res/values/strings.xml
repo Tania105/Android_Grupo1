@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MiIncidencia</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="guardar_contrase_a">¿Guardar contraseña?</string>
+    <string name="bienvenido_a_miincidencia">Bienvenido a MiIncidencia</string>
+    <string name="inicio_de_sesi_n">Inicio de sesión</string>
+    <string name="adjunta_archivos">Adjunta archivos</string>
+    <string name="adjuntos">Adjuntos:</string>
+    <string name="datos_generales">Datos Generales:</string>
+    <string name="descripci_n_del_problema">Descripción del problema:</string>
+    <string name="subtipo">Subtipo:</string>
+    <string name="tipo">Tipo:</string>
 </resources>

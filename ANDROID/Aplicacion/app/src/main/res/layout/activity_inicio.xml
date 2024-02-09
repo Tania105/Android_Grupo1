@@ -10,7 +10,7 @@
         android:id="@+id/txtBienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a MiIncidencia"
+        android:text="@string/bienvenido_a_miincidencia"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/txtInicioSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inicio de sesión"
+        android:text="@string/inicio_de_sesi_n"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtBienvenida"
@@ -33,29 +33,31 @@
         />
 
 
-
     <EditText
         android:id="@+id/edtUsuario"
         android:layout_width="180dp"
         android:layout_height="48dp"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/usuario"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtInicioSesion"
-        android:hint="Usuario"
-        />
+        android:autofillHints="" />
 
 
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="180dp"
         android:layout_height="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtUsuario"
         android:layout_marginTop="20dp"
-        android:hint="Contraseña"
-        />
+        android:hint="@string/contrase_a"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUsuario"
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnInicioSesion"
@@ -65,18 +67,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/switchContra"
         android:layout_marginTop="50dp"
-        android:text="Iniciar"/>
+        android:text="@string/iniciar"/>
 
     <Switch
         android:id="@+id/switchContra"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:text="¿Guardar contraseña?"
+        android:text="@string/guardar_contrase_a"
         app:layout_constraintTop_toBottomOf="@id/edtPassword"
         app:layout_constraintEnd_toEndOf="@id/edtPassword"
         android:layout_marginTop="15dp"
 
-        />
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

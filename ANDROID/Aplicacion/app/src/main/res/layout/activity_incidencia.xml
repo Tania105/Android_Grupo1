@@ -9,27 +9,29 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardDatos"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_marginTop="50dp"
         app:cardElevation="25dp"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:id="@+id/txtDatos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Datos Generales:"/>
+            android:text="@string/datos_generales"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <TextView
             android:id="@+id/txtTipo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:textSize="18dp"
-            android:text="Tipo:"/>
+            android:text="@string/tipo"
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck" />
 
         <Spinner
             android:id="@+id/spTipo"
@@ -43,23 +45,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="110dp"
-            android:textSize="18dp"
-            android:text="Subtipo:"/>
+            android:text="@string/subtipo"
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck" />
 
         <Spinner
             android:id="@+id/spSubTipo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="130dp"
-            android:spinnerMode="dropdown"
-             />
+            android:spinnerMode="dropdown" />
 
         <Button
             android:id="@+id/btnAdjuntar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Adjunta archivos"/>
+            android:text="@string/adjunta_archivos"
+            tools:ignore="VisualLintButtonSize" />
 
 
     </androidx.cardview.widget.CardView>
@@ -77,14 +80,17 @@
             android:id="@+id/txtDescripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Descripción del problema:"/>
+            android:text="@string/descripci_n_del_problema"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
+
         <EditText
             android:id="@+id/edtDescripcion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
-            />
+            android:autofillHints=""
+            tools:ignore="LabelFor,VisualLintTextFieldSize,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
 
     </androidx.cardview.widget.CardView>
@@ -92,25 +98,26 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAdjuntos"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/cardDescripcion"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_marginTop="50dp"
         app:cardElevation="25dp"
-        >
+        app:layout_constraintTop_toBottomOf="@id/cardDescripcion"
+        tools:ignore="TextSizeCheck,VisualLintBounds">
 
         <TextView
             android:id="@+id/txtAdjuntos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Adjuntos:"/>
+            android:text="@string/adjuntos"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listaAdjuntos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
 
     </androidx.cardview.widget.CardView>

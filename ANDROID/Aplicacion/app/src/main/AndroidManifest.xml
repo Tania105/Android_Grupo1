@@ -19,6 +19,15 @@
             android:name=".IncidenciaActivity"
             android:exported="false" />
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.pruebaandroid.InicioActivity"
             android:exported="true">
             <intent-filter>

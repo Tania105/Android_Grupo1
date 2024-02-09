@@ -12,4 +12,12 @@
     <string name="descripci_n_del_problema">Descripción del problema:</string>
     <string name="subtipo">Subtipo:</string>
     <string name="tipo">Tipo:</string>
+    <string name="ver_incidencias">Ver Incidencias</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="contacto">Contacto</string>
+    <string name="bienvenido_usuario">Bienvenido usuario</string>
+    <string name="copyright_2023_ies_miguel_herrero">Copyright © 2023 IES Miguel Herrero</string>
+    <string name="incidencias_activas">Incidencias Activas:</string>
+    <string name="txtconfiguracion">CONFIGURACION</string>
+    <string name="txtcontacto">CONTACTO</string>
 </resources>

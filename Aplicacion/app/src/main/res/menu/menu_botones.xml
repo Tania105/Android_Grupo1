@@ -12,10 +12,13 @@
         android:icon="@drawable/folder_24"
         />
 
+
     <item
         android:id="@+id/notificaciones"
         android:title="Notificaciones"
         android:icon="@drawable/notifications_24"
         />
+
+
 
 </menu>

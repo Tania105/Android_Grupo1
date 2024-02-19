@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#008000</color> <!-- Verde oscuro -->
+    <color name="colorPrimaryDark">#070707</color> <!-- Blanco -->
+    <color name="colorAccent">#FF0000</color> <!-- Rojo oscuro -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -12,7 +15,4 @@
     <color name="green">#3B7E29</color>
     <color name="greenClaro">#4DB332</color>
     <color name="transparente">#004DB332</color>
-    <color name="colorPrimary">#24AE24</color> <!-- Verde -->
-    <color name="colorPrimaryDark">#24AE24</color> <!-- Rojo -->
-    <color name="colorAccent">#AEFF0000</color> <!-- Blanco -->
 </resources>

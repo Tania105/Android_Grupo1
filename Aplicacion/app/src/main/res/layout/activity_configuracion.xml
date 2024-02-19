@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/imagenCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_person_pin_24"
+                />
+            <TextView
+                android:id="@+id/nombreCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la persona"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+     <TextView
+         android:id="@+id/correoElectronico"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Correo electronico"
+         android:textSize="20sp"
+         android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/selectorIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        />
+    <Switch
+        android:id="@+id/swtOscuro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Activar modo oscuro"
+        android:textSize="20dp"/>
+    <Switch
+        android:id="@+id/swtNotificaciones"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Activar notificaciones"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/txtContacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Contacta con nosotros"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txtAcercaDe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Acerca de"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/txtCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cerrar Sesión"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="20dp"/>
+
+
+
+</LinearLayout>

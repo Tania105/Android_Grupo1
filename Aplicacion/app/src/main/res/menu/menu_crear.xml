@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/adjuntar"
+        android:title="Filtro"
+        android:icon="@drawable/attach_file_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/aceptar"
+        android:title="Filtro"
+        android:icon="@drawable/baseline_check_24"
+        app:showAsAction="always"
+        />
+
+
+
+</menu>

@@ -6,14 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".incidencia.IncidenciaActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        app:title="IRIS-4505"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_editar"/>
 
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="-2dp"
+        android:layout_alignEnd="@id/toolbar"
+
+        android:text="25/02/2019"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imgEstado"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/toolbar"/>
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_toEndOf="@id/imgEstado"
+        android:text="Estado"
+        android:textSize="20dp"
+        />
 
     <EditText
         android:id="@+id/edtTituloIncidencia"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-
+        android:layout_below="@+id/txtFecha"
         android:hint="Titulo de incidencia"
         android:textSize="25dp"
 
@@ -128,6 +164,7 @@
         />
 
 
+
     <Button
         android:id="@+id/btnMostrar"
         android:layout_width="wrap_content"
@@ -135,28 +172,70 @@
         android:background="@color/white"
         android:text="Mostrar más"
         android:textColor="@color/black"
-        android:layout_below="@id/listaAdjuntos"/>
+        android:layout_below="@id/layoutComentarios"/>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAdjuntos"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="25dp"
+        android:layout_below="@id/edtNumEtiqueta"
+        android:visibility="gone"
+        >
 
         <TextView
             android:id="@+id/txtAdjuntos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:layout_below="@id/spSubTipo"
-            android:visibility="gone"
             android:text="Adjuntos:"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listaAdjuntos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txtAdjuntos"
-            android:visibility="gone"
             android:layout_marginTop="30dp"/>
 
 
+    </androidx.cardview.widget.CardView>
 
+    <RelativeLayout
+        android:id="@+id/layoutComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardAdjuntos"
+        android:visibility="gone"
+        >
+    <TextView
+        android:id="@+id/txtComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Comentarios"
+        android:textSize="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtComentarios"/>
+
+    <EditText
+        android:id="@+id/edtComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su comentario..."
+        android:layout_below="@+id/listaComentarios"/>
+
+    <Button
+        android:id="@+id/btnAnadirCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        android:layout_below="@id/edtComentario"/>
+    </RelativeLayout>
 
 
 

@@ -16,8 +16,8 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="80dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         />
+
 
     <TextView
         android:id="@+id/txtInicioSesion"
@@ -29,7 +29,6 @@
         app:layout_constraintTop_toBottomOf="@id/txtBienvenida"
         android:layout_marginTop="80dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         />
 
 
@@ -43,6 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtInicioSesion"
         android:hint="Usuario"
+        android:ems="10"
+        android:inputType="textEmailAddress"
         />
 
 
@@ -55,6 +56,8 @@
         app:layout_constraintTop_toBottomOf="@id/edtUsuario"
         android:layout_marginTop="20dp"
         android:hint="Contraseña"
+        android:ems="10"
+        android:inputType="textPassword"
         />
 
     <Button

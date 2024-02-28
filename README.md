@@ -35,12 +35,12 @@ El proyecto IRIS está diseñado para proporcionar una solución completa para l
 
 ## Documentación de la API
 
-- [Documentación oficial de la API](enlace-a-la-documentacion)
-- [Ejemplos de código en diferentes lenguajes de programación](enlace-a-los-ejemplos-de-codigo)
+- [Documentación oficial de la API mediante Swagger (debe tenerse la API en ejecución)](http://localhost:8089/swagger-ui/index.html)
+- [Listado de endpoints](enlace-a-los-ejemplos-de-codigo)
 
 La documentación oficial de nuestra API proporciona una descripción detallada de los endpoints disponibles, los parámetros de solicitud, las respuestas esperadas y cualquier otra información relevante para interactuar con nuestra API.
 
-También hemos proporcionado ejemplos de código en varios lenguajes de programación para ayudar a los desarrolladores a comenzar a utilizar nuestra API en sus propias aplicaciones.
+También hemos proporcionado el enlace a la documentación de Swagger
 
 Para más información sobre nuestra API, consulte el [repositorio API](https://github.com/Isaac640/IncidenciasAPI)
 
@@ -52,8 +52,8 @@ Actualmente la aplicación móvil solo puede emularse a través de Android Studi
 ### Emulación en Android Studio
 
 #### Requisitos previos
-      - Java Development Kit (JDK) 8 o superior
-      - Android Studio 4.0 o superior
+      - Java Development Kit (JDK) 1.8 o superior
+      - Android Studio 28 o superior
 
 #### Pasos de instalación
 

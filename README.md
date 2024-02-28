@@ -20,9 +20,11 @@ Si quiere saber más sobre el proyecto IRIS visite nuestro [repositorio principa
     * [Versión](#versión)
     * [Utilidades](#utilidades)
     * [Seguridad](#seguridad)
+* [Korobot](#korobot)
 * [Uso](#uso)
     * [Registro de incidencias](#registro-de-incidencias)
     * [Seguimiento de estado](#seguimiento-de-estado)
+    * [Video tutorial](#video-tutorial)
 * [Miembros](#miembros)
 * [Contribución](#contribución)
 * [Contacto](#contacto)
@@ -35,15 +37,17 @@ El proyecto IRIS está diseñado para proporcionar una solución completa para l
 
 ## Documentación de la API
 
-- [Documentación oficial de la API mediante Swagger (debe tenerse la API en ejecución)](http://localhost:8089/swagger-ui/index.html)
-- [Listado de endpoints](enlace-a-los-ejemplos-de-codigo)
+- [Documentación oficial de la API mediante Swagger](http://localhost:8089/swagger-ui/index.html)
 
-La documentación oficial de nuestra API proporciona una descripción detallada de los endpoints disponibles, los parámetros de solicitud, las respuestas esperadas y cualquier otra información relevante para interactuar con nuestra API.
+La documentación oficial de nuestra API proporciona mediante Swagger una descripción detallada de los endpoints disponibles, los parámetros de solicitud, las respuestas esperadas y cualquier otra información relevante para interactuar con nuestra API.
 
-También hemos proporcionado el enlace a la documentación de Swagger
+**Notas adicionales**:
+- Asegúrate de que la API esté en funcionamiento para acceder a la documentación.
+- Si cambias el puerto por el que la API escucha (8089), recuerda actualizar también el puerto en la dirección del enlace.
+
+- [Listado de endpoints](https://github.com/Isaac640/IncidenciasAPI/blob/main/ENDPOINTS.md)
 
 Para más información sobre nuestra API, consulte el [repositorio API](https://github.com/Isaac640/IncidenciasAPI)
-
 
 ## Instalación
 
@@ -100,10 +104,29 @@ Versión de prueba 1.0 (Prueba): Esta versión es una demostración de nuestro t
 4. Asistente virtual: Contamos con un asistente virtual en la aplicación al que poder preguntarle dudas sobre la utilización de la aplicación, además de opciones de entretenimiento como chistes, canciones, etc.
 5. Sección de contacto de la aplicación, que te muestra métodos para realizar tu consulta o reclamación.
 
+<div align="center">
+  <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/image%20(2).png" alt="Login">
+</div>
+
 ### Seguridad
 En nuestro proyecto, nos tomamos muy en serio la seguridad de nuestros usuarios y sus datos. La aplicación móvil cuenta con autentificación de datos para poder loggearse, siempre mediante el uso de contraseñas seguras encriptadas en nuestra base de datos.
 
 - **Reporte de problemas de seguridad**: Si encuentras alguna vulnerabilidad en nuestra aplicación, por favor contáctanos de manera confidencial a [contacto@iris.com].
+
+## Korobot
+<div align="center">
+  <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/korobot.png" alt="Korobot cabeza">
+</div>
+
+Korobot es nuestro asistente virtual de confianza, tenemos la posibilidad de utilizar palabras clave para que nos explique diferentes funciones de la aplicación.
+
+Además de esto, tiene opciones más lúdicas como contar chistes o poner música.
+
+Este asistente cuenta también con la opción de reconocimiento de voz, podrás hablarle de forma verbal para solucionar tus dudas.
+
+<div align="center">
+  <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/Screenshot_20240227-205154_IRIS.jpg" alt="Korobot">
+</div>
 
 ## Uso
 
@@ -118,6 +141,13 @@ Para seguir el estado de una incidencia registrada, abre la aplicación IRIS.
 Inicia sesión con tus credenciales de profesorado.
 Selecciona la opción de "Mis incidencias" en el menú principal para ver el estado de tus incidencias registradas.
 
+<div align="center">
+  <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/image.png" alt="Captura estado">
+</div>
+
+### Video tutorial
+
+Entre nuestros recursos multimedia, adjuntamos enlace a nuestro [videotutorial descargable](https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/IRIS_TUTORIAL_DEF.mp4)
 
 ## Miembros
 

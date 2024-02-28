@@ -1,0 +1,42 @@
+<!-- res/layout/chip_group_item.xml -->
+
+<com.google.android.material.chip.ChipGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chip_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checkableBehavior="none"
+    >
+
+    <!-- Aquí puedes agregar los chips individualmente o inflarlos programáticamente -->
+    <com.google.android.material.chip.Chip
+        android:id="@+id/fEquipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipos" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/fCuentas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuentas" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/fWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/fInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet" />
+    <com.google.android.material.chip.Chip
+        android:id="@+id/fSoftware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software" />
+
+    <!-- Agrega más chips si es necesario -->
+</com.google.android.material.chip.ChipGroup>

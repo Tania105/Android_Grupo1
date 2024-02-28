@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incidencia.IncidenciaActivity">
+
+
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/edtTituloIncidencia"
+
+        android:text="25/02/2019"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imgEstado"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/korobot"
+        />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgEstado"
+        android:text="Estado"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/edtTituloIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtFecha"
+        android:hint="Titulo de incidencia"
+        android:textSize="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTituloIncidencia"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Descripción del problema:"/>
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDescripcion"
+        android:textSize="22dp"
+        android:hint="Descripcion"
+        />
+
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:text="Tipo:"
+        android:layout_below="@id/edtDescripcion"/>
+
+    <TextView
+        android:id="@+id/spTipo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtTipo"/>
+
+    <TextView
+        android:id="@+id/txtSubtipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spTipo"
+        android:textSize="18dp"
+        android:text="Subtipo:"/>
+
+    <TextView
+        android:id="@+id/spSubTipo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtSubtipo"
+        />
+
+    <TextView
+        android:id="@+id/txtAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spSubTipo"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Aula:"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/edtAula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAula"
+        android:hint="Aula"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txtPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtAula"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Puesto:"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/edtPuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPuesto"
+        android:hint="Puesto"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txtNumEtiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPuesto"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Numero de etiqueta:"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/edtNumEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumEtiqueta"
+        android:hint="Numero de etiqueta"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar más"
+        android:textSize="18dp"
+        android:layout_below="@id/layoutComentarios"
+        android:background="?attr/selectableItemBackground"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAdjuntos"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="25dp"
+        android:layout_below="@id/edtNumEtiqueta"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/txtAdjuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Adjuntos:"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaAdjuntos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/layoutComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardAdjuntos"
+        android:visibility="gone"
+        >
+    <TextView
+        android:id="@+id/txtComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Comentarios"
+        android:textSize="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtComentarios"/>
+
+    <EditText
+        android:id="@+id/edtComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su comentario..."
+        android:layout_below="@+id/listaComentarios"/>
+
+    <Button
+        android:id="@+id/btnAnadirCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        android:layout_below="@id/edtComentario"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <!--
+
+
+
+
+
+
+
+ <androidx.cardview.widget.CardView
+     android:id="@+id/cardAdjuntos"
+     android:layout_marginTop="50dp"
+     app:layout_constraintTop_toBottomOf="@id/cardDescripcion"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:cardElevation="25dp"
+     android:visibility="invisible"
+     >
+
+     <TextView
+         android:id="@+id/txtAdjuntos"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="20dp"
+         android:text="Adjuntos:"/>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/listaAdjuntos"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"/>
+
+
+ </androidx.cardview.widget.CardView>
+-->
+
+</RelativeLayout>

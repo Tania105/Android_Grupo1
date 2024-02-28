@@ -116,7 +116,7 @@ En nuestro proyecto, nos tomamos muy en serio la seguridad de nuestros usuarios 
 ## Korobot
 <div align="center">
   <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/korobot.png" alt="Korobot cabeza"
-    alt="Korobot cabeza" width="200" height="200">
+    alt="Korobot cabeza" width="200" height="400">
 </div>
 
 Korobot es nuestro asistente virtual de confianza, tenemos la posibilidad de utilizar palabras clave para que nos explique diferentes funciones de la aplicación.

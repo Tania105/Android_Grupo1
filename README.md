@@ -127,7 +127,7 @@ Este asistente cuenta también con la opción de reconocimiento de voz, podrás 
 
 <div align="center">
   <img src="https://github.com/Tania105/Android_Grupo1/blob/main/Multimedia/Screenshot_20240227-205154_IRIS.jpg" alt="Korobot"
-    alt="Korobot cabeza" width="380" height="500">
+    alt="Korobot cabeza" width="380" height="600">
 </div>
 
 ## Uso
